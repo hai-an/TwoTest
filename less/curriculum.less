@@ -1,0 +1,92 @@
+// 课程区域
+// 变量: 存储75px
+@rootSize: 75rem;
+body {
+	display: flex;
+}
+// 课程区域
+.sidebar {
+	margin: (304/ @rootSize) 0 (100 /@rootSize);
+	// -webkit-overflow-scrolling: touch;
+	width: (240 / @rootSize);
+	height: (930 / @rootSize);
+	overflow: scroll;
+	margin-right: (20 / @rootSize);
+	background: #fff;
+
+	ul li {
+		padding-left: (36 / @rootSize);
+		a {
+			display: block;
+			padding: (22.5 / @rootSize) 0;
+			color: #666;
+			font-size: (28 / @rootSize);
+			&.current {
+				color: #333;
+			}
+		}
+	}
+}
+.content {
+	height: (930 / @rootSize);
+	margin: (284 / @rootSize) 0 (100 /@rootSize);
+	padding-top: (20 / @rootSize);
+	overflow: scroll;
+	.item {
+		margin-bottom: (20 / @rootSize);
+		.tit {
+			h4 {
+				margin-bottom: (14 / @rootSize);
+				font-size: (24 / @rootSize);
+				color: #888;
+				font-weight: 400;
+			}
+		}
+		.con {
+			display: flex;
+			align-items: center;
+			background: #fff;
+			li {
+				display: flex;
+				margin: (20 / @rootSize) (20 / @rootSize) 0;
+				padding-bottom: (20 / @rootSize);
+				.pic {
+					width: (204 / @rootSize);
+					height: (124 / @rootSize);
+					margin-right: (20 / @rootSize);
+				}
+				.info {
+					flex: 1;
+					h4 {
+						font-size: (28/ @rootSize);
+						color: #333;
+						font-weight: 400;
+						margin-bottom: (14 / @rootSize);
+					}
+					p {
+						font-size: (24 / @rootSize);
+						color: #888;
+						margin-bottom: (8 / @rootSize);
+					}
+					.buy {
+						display: block;
+						width: (196 / @rootSize);
+						height: (46 / @rootSize);
+						background: #edf8ff;
+						line-height: (46 / @rootSize);
+						color: #1c9fea;
+						font-size: (26 / @rootSize);
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+	.item:last-child {
+		margin-bottom: 0;
+		.con li {
+			border-bottom: 1px solid #d9dce6;
+		}
+	}
+}
+// 课程区域

@@ -1,0 +1,177 @@
+@rootSize:75rem;
+// 活动
+
+.activity {
+	margin: (284 / @rootSize) 0 (100 /@rootSize);
+	padding-top: (20 / @rootSize);
+	.top {
+		position: relative;
+		padding: (30 / @rootSize);
+		background: #fff;
+		margin-bottom: (20 / @rootSize);
+		// 收藏
+		.pic {
+			position: absolute;
+			top: (14 / @rootSize);
+			right: (92 / @rootSize);
+			width: (62 / @rootSize);
+			height: (62 / @rootSize);
+			background: #fff3f3 url(../images/心.png) no-repeat center;
+			background-size: (33 / @rootSize) (30 / @rootSize);
+			border-radius: 50%;
+			&::before {
+				content: '已收藏';
+				position: absolute;
+				top: (72/ @rootSize);
+				left: (-5 / @rootSize);
+				width: (80/ @rootSize);
+				font-size: (22 / @rootSize);
+				color: #333;
+			}
+		}
+		// 标题
+		h5 {
+			font-size: (26 / @rootSize);
+			color: #333;
+		}
+		// 学习人数
+		p {
+			margin: (20 / @rootSize) 0 (30/@rootSize);
+			font-size: (24 / @rootSize);
+			color: #888888;
+
+			i {
+				display: inline-block;
+				width: (24 / @rootSize);
+				height: (22 / @rootSize);
+				margin-right: (10 / @rootSize);
+				background: url(../images/xingxing1.png) no-repeat;
+				background-size: (24 / @rootSize) (22 / @rootSize);
+				vertical-align: middle;
+				&.current {
+					background-image: url(../images/xingxing2.png);
+				}
+				&:first-child {
+					margin-left: (20 / @rootSize);
+				}
+			}
+		}
+		// 课程等级
+		.lesson {
+			border-bottom: (1 / @rootSize) solid #d9dce6;
+			border-top: (1 / @rootSize) solid #d9dce6;
+			ul {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				height: (132 / @rootSize);
+				li {
+					height: (70 / @rootSize);
+					padding: 0 (70 / @rootSize) 0 (48 / @rootSize);
+					&:nth-child(2) {
+						padding: 0 (68 / @rootSize);
+						border-left: (1 / @rootSize) solid #d9dce6;
+						border-right: (1 / @rootSize) solid #d9dce6;
+					}
+					h6 {
+						font-weight: 400;
+						font-size: (26 / @rootSize);
+						color: #888;
+						margin-bottom: (10 / @rootSize);
+					}
+					p {
+						font-size: (28 / @rootSize);
+						color: #333;
+					}
+				}
+			}
+		}
+		// 活动公告
+		.notice_msg {
+			margin-top: (30 /@rootSize);
+			.tit {
+				margin-bottom: (20/ @rootSize);
+				h5 {
+					font-size: (26 / @rootSize);
+					font-weight: 700;
+					color: #333;
+				}
+			}
+			.content {
+				.acti_time {
+					height: (44 / @rootSize);
+					padding-left: (69 / @rootSize);
+					margin-bottom: (30 /@rootSize);
+					background-color: #fff3f3;
+					font-size: (24 / @rootSize);
+					color: #f01513;
+					line-height: (44 / @rootSize);
+					border-radius: (22.5 /@rootSize);
+				}
+				.qiang_gou {
+					margin-left: (100 /@rootSize);
+					ul li img {
+						display: inline-block;
+						width: (26 /@rootSize);
+						height: (26 /@rootSize);
+						margin-right: (15 /@rootSize);
+						margin-bottom: (20 /@rootSize);
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+	.bottom {
+		// 课程
+		.tit {
+			background-color: #fff;
+			h4 {
+				padding: (30 /@rootSize);
+				font-size: (28 / @rootSize);
+				font-weight: 400;
+				color: #333333;
+			}
+		}
+		.con {
+			overflow: scroll;
+			padding: 0 (30 /@rootSize);
+			border-top: (2 / @rootSize) solid #d9dce6;
+			height: (156 / @rootSize);
+			background-color: #fff;
+			.pic {
+				display: flex;
+				justify-content: space-evenly;
+				width: 18rem;
+				padding: (30 /@rootSize) 0;
+				a {
+					width: (156 / @rootSize);
+					height: (94 / @rootSize);
+					margin-right: (22 / @rootSize);
+				}
+			}
+		}
+		// 商家信息
+		.seller_info {
+			background-color: #fff;
+			color: #333333;
+			dl {
+				// padding: 0 (30 /@rootSize);
+				font-size: (26 / @rootSize);
+				dt {
+					font-size: (28 / @rootSize);
+					padding: (30 /@rootSize);
+					border-bottom: (2 /@rootSize) solid #f5f5f5;
+				}
+				dd {
+					height: (88 / @rootSize);
+					margin-left: (30/ @rootSize);
+					line-height: (86 / @rootSize);
+				}
+				dd:nth-of-type(-n + 3) {
+					border-bottom: (1 /@rootSize) solid #e2e5ed;
+				}
+			}
+		}
+	}
+}

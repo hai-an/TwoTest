@@ -1,0 +1,152 @@
+// 评价区域
+@rootSize: 75rem;
+.evaluate {
+	width: 100%;
+	margin: (284 / @rootSize) 0 (100 /@rootSize);
+	padding-top: (20 / @rootSize);
+	overflow: hidden;
+	// 综合评分区域
+	.scores {
+		display: flex;
+		align-items: center;
+		height: (168 /@rootSize);
+		background: #fff;
+		color: #333;
+		.left {
+			// display: flex;
+			// align-items: center;
+			// justify-content: center;
+			height: (120 / @rootSize);
+			width: (249 / @rootSize);
+			border-right: (1 / @rootSize) solid #d9dce6;
+			text-align: center;
+			h5 {
+				margin: (9 / @rootSize) 0;
+				font-size: (52 / @rootSize);
+
+				color: #ff9903;
+				font-weight: 400;
+			}
+			p {
+				font-size: (28 / @rootSize);
+			}
+		}
+		.right {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			flex: 1;
+			height: (120 /@rootSize);
+			padding-left: (60 /@rootSize);
+			p {
+				font-size: (26 / @rootSize);
+				line-height: (34/ @rootSize);
+				span:nth-child(-n + 2) {
+					margin-left: (30 / @rootSize);
+					color: #ff9903;
+					i {
+						display: inline-block;
+						width: (24 / @rootSize);
+						height: (22 / @rootSize);
+						margin-right: (10 / @rootSize);
+						background: url(../images/xingxing1.png) no-repeat;
+						background-size: (24 / @rootSize) (22 / @rootSize);
+					}
+					i.back {
+						background-image: url(../images/xingxing2.png);
+					}
+				}
+			}
+		}
+	}
+	// 用户评价区域
+	.txt_area {
+		margin-top: (20 / @rootSize);
+		background-color: #fff;
+		width: 100%;
+		.title {
+			display: flex;
+			height: (90 / @rootSize);
+			padding-left: (30 / @rootSize);
+			line-height: (90 / @rootSize);
+			border-bottom: (2 / @rootSize) solid #f5f5f5;
+			h5 {
+				font-size: (28 / @rootSize);
+				margin-right: (30 / @rootSize);
+				font-weight: 400;
+				color: #888;
+				&.current {
+					color: #333;
+				}
+			}
+		}
+		.con {
+			padding: (30 / @rootSize);
+			padding-right: 0;
+			& > h4 {
+				width: (321 / @rootSize);
+				height: (62 / @rootSize);
+				background-color: #f9f9f9;
+				font-size: (28 / @rootSize);
+				color: #888;
+				line-height: (62 / @rootSize);
+				text-align: center;
+				font-weight: 400;
+				border-radius: (31 / @rootSize);
+				i {
+					display: inline-block;
+					width: (32 / @rootSize);
+					height: (32 / @rootSize);
+					margin-right: (15 / @rootSize);
+					vertical-align: middle;
+				}
+			}
+			// 评论区
+			ul li {
+				display: flex;
+				padding: (30 / @rootSize) 0 (30 / @rootSize) 0;
+				border-bottom: 2px solid #f5f5f5;
+				.pic img {
+					width: (64 / @rootSize);
+					height: (64 / @rootSize);
+					margin-right: (20 / @rootSize);
+				}
+				.user_msg {
+					flex: 1;
+					width: (646 / @rootSize);
+					padding-right: (30 / @rootSize);
+					.name {
+						display: flex;
+						justify-content: space-between;
+						font-size: (32 / @rootSize);
+						margin-bottom: (10 / @rootSize);
+						color: #333;
+						font-weight: 400;
+						i {
+							display: inline-block;
+							width: (24 / @rootSize);
+							height: (22 / @rootSize);
+							margin-right: (10 / @rootSize);
+							background: url(../images/xingxing1.png) no-repeat;
+							background-size: (24 / @rootSize) (22 / @rootSize);
+							&.current {
+								background-image: url(../images/xingxing2.png);
+							}
+						}
+					}
+					.date {
+						margin-bottom: (15 / @rootSize);
+						font-size: (24 / @rootSize);
+						color: #999;
+					}
+					.saying {
+						font-size: (26 / @rootSize);
+						color: #666;
+					}
+				}
+			}
+		}
+	}
+}
+
+// 评价区域
